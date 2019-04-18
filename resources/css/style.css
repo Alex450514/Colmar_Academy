@@ -99,7 +99,7 @@ header .mobile {
   display: flex;
   padding-top: 64px;
   width: 100%;
-  background-image: url('./resources/images/art_artificial_artistic.jpg'); /*https://www.pexels.com/search/website%20background/*/
+  background-image: url('https://raw.githubusercontent.com/Alex450514/Colmar_Academy/master/resources/images/art_artificial_artistic.jpg'); /*https://www.pexels.com/search/website%20background/*/
   background-size: cover;
   align-items: center;
 }
