@@ -1,0 +1,675 @@
+/* Universal Styles */
+
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+
+body {
+  line-height: 1.4;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  flex-grow: 1;
+  padding-left: 24px;
+}
+
+
+.logo img {
+  width: auto;
+  height: 45px;
+}
+
+
+.logo .font-black {
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+
+.logo .font-bold {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+
+header nav {
+  padding-right: 16px;
+}
+
+
+header nav span{
+  display: inline-block;
+  padding: 40px 8px;
+}
+
+
+header .mobile {
+  display: none;
+}
+
+/*Mobile header*/
+
+@media only screen and (max-width: 645px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .logo {
+    display: none;
+  }
+}
+
+/*First container with large image*/
+
+.container__1 {
+  display: flex;
+  padding-top: 64px;
+  width: 100%;
+  background-image: url('C:/Projects/Colmar_Academy/resources/images/art_artificial_artistic.jpg'); /*https://www.pexels.com/search/website%20background/*/
+  background-size: cover;
+  align-items: center;
+}
+
+
+.container__image {
+  margin: 32px 24px;
+  width: 60%;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+
+.container__text {
+  flex: 1 1 auto;
+}
+
+
+ h1 {
+  font-family: "Anton";
+  font-size: 60px;
+}
+
+
+.container__text h2 {
+  font-family: "Anton";
+  font-size: 28px;
+  opacity: 0.8;
+}
+
+
+h3 {
+  font-family: "Anton";
+  font-size: 25px;
+}
+
+
+.container__text p {
+  background-color: #4e4d4d;
+  margin-top: 30px;
+  text-align: center;
+  width: 70%;
+  padding: 8px 0px;
+}
+
+
+.container__text a {
+  color: white;
+}
+
+
+.container__text p:hover {
+  background-color: #4688ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+  transition: color 600ms, ease-in 500ms;
+}
+
+/*Second container with large image and small images*/
+
+.container__2 {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: auto;
+}
+
+
+.left__items {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+
+.left__items img {
+  width: 100%;
+}
+
+
+.left__items h1 {
+  font-size: 50px;
+  padding-top: 32px;
+}
+
+
+.left__items p {
+  font-size: 20px;
+  padding: 24px 0px 30px 0px;
+}
+
+
+.right__items {
+  border-left: 1px solid #DCDCDC;
+  padding: 16px 0px 32px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+
+.right__box img.laptop__desktop {
+  height: auto;
+  width: 35%;
+  padding: 16px;
+}
+
+
+.right__box img.mobile {
+  display: none;
+}
+
+
+.right__box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.right__box p {
+  font-size: 18px;
+}
+
+
+.content {
+  padding: 16px 10px 16px 0px;
+  width: 65%;
+}
+
+
+.content p {
+  font-size: 15px;
+  padding-top: 8px;
+}
+
+
+.content a {
+  font-size: 15px;
+  color: #7abbf7;
+  padding-top: 8px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.right__box.middle {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+
+.right__box.down {
+  background-color: #e4e4e4;
+}
+
+
+.right__box.down:hover {
+  opacity: 0.8;
+  background-color: #4688ff;
+  transition: color 600ms, ease-in 500ms;
+}
+
+
+.right__box.down a {
+  color: #545398;
+  font-weight: bold;
+}
+
+/*Third container with courses*/
+
+.container__3 {
+  background-image: url('C:/Projects/Colmar_Academy/resources/images/astronomy-background-constellation-355887.jpg'); /*https://www.pexels.com/search/website%20background/*/
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.all__content {
+  margin: auto;
+}
+
+
+.title__start {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 32px;
+}
+
+
+.title__start h1 {
+  color: white;
+  font-size: 50px;
+}
+
+
+.all__courses {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 16px 72px;
+}
+
+
+.course {
+  background-color: white;
+  width: 30%;
+  margin: 16px 0px;
+}
+
+
+.course.two {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+
+.course.five {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+
+.course img {
+  height: auto;
+  width: 100%;
+}
+
+
+.text__course {
+  padding: 16px 16px 24px 16px;
+}
+
+
+.text__course span {
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+
+.course h3 {
+  padding-bottom: 8px;
+}
+
+
+.course span {
+  padding: 8px 0px;
+}
+
+/*Fourth container with video*/
+
+.title__thesis {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 32px;
+}
+
+
+.title__thesis h1 {
+  font-size: 50px;
+}
+
+
+.all__content__4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.left__items__4 {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+
+.left__items__4 video {
+  width: 100%;
+}
+
+
+.left__items__4 h1 {
+  font-size: 50px;
+  padding-top: 24px;
+}
+
+
+.left__items__4 p {
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+
+.right__items__4 {
+  padding: 32px 0px 32px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+}
+
+
+.right__box__4 img.laptop__desktop {
+  height: auto;
+  width: 35%;
+  padding: 16px;
+}
+
+
+.right__box__4 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.right__box__4 p {
+  font-size: 18px;
+}
+
+
+.content__4 {
+  padding: 16px 20px 16px 0px;
+  width: 65%;
+}
+
+
+.content__4 p {
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+
+.right__box__4.up {
+  background-color: #e4e4e4;
+}
+
+
+.right__box__4.up:hover {
+  opacity: 0.8;
+  background-color: #4688ff;
+  transition: color 600ms, ease-in 500ms;
+}
+
+/*Footer*/
+
+footer {
+  height: 80px;
+  border-top: 1px solid #e2e2e2;
+}
+
+
+footer .text__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  margin-left: 24px;
+}
+
+
+footer nav span{
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+/*Container 1 Mobile version*/
+
+@media only screen and (max-width: 780px) {
+  .container__1 {
+    flex-direction: column;
+    padding-top: 64px;
+    width: 100%;
+    background-color: #e2e2e2;
+    align-items: center;
+  }
+
+  .container__1 .container__text {
+    margin-left: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container__image {
+    margin: 0px;
+    width: 100%;
+    height: 315px;
+    object-fit: fill;
+    align-self: center;
+  }
+  .container__text h1 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+    font-size: 60px;
+  }
+
+  .container__text h2 {
+    margin-left: 16px;
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  .container__text p {
+    width: 90%;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    margin-left: 16px;
+    background-color: #b2b2b2;
+  }
+
+  .container__text p:hover {
+    background-color: #b2b2b2;
+    box-shadow: none;
+ }
+
+ .container__1 .container__text {
+   margin-left: 0px;
+ }
+}
+
+/*Container 2 Mobile version*/
+
+@media only screen and (max-width: 610px) {
+  .right__box {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .left__items {
+    display: none;
+  }
+
+  .right__items {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .right__box img.laptop__desktop {
+    display: none;
+  }
+
+  .right__box img.mobile {
+    display: flex;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 0px;
+    padding-bottom: 64px;
+  }
+
+  .content.three {
+    padding-bottom: 0px;
+  }
+
+  .right__box.down {
+    background-color: white;
+  }
+
+  .right__box.down:hover {
+    opacity: 1;
+    background-color: white;
+  }
+}
+
+/*Container 3 Mobile version*/
+
+@media only screen and (max-width: 800px) {
+  .all__content {
+    margin: auto;
+    width: 90%;
+}
+
+  .all__courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 16px 0px 32px 0px;
+}
+
+  .course {
+    background-color: #67ecff;
+    margin: 0;
+    width: 100%;
+    border-radius: 10px;
+}
+
+  .course.two {
+    margin: 8px 0px 8px 0px;
+}
+
+  .course.three {
+    margin: 0px 0px 8px 0px;
+}
+
+  .course.four {
+    margin: 0px 0px 8px 0px;
+}
+
+  .course.five {
+    margin: 0px 0px 8px 0px;
+}
+
+  .img__course {
+    display: none;
+}
+
+  .text__course span {
+    display: none;
+}
+
+  .text__course p {
+    display: none;
+}
+
+  .text__course {
+    padding: 16px 0px 24px 16px;
+}
+}
+
+/*Container 4 Mobile version*/
+
+@media only screen and (max-width: 560px) {
+  .right__box__4 {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .right__items__4 {
+    display: none;
+  }
+
+  .left__items__4 h1 {
+    display: none;
+  }
+
+  .left__items__4 p {
+    display: none;
+  }
+
+  .left__items__4 {
+    width: 100%;
+    padding: 16px 0px 24px 0px;
+  }
+}
+
+/*Footer Mobile version*/
+
+@media only screen and (max-width: 480px) {
+  footer {
+    height: 0px;
+  }
+
+  footer .text__footer {
+    margin-bottom: 16px;
+}
+
+  .links__footer {
+    display: none;
+  }
+}
