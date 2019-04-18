@@ -273,7 +273,7 @@ h3 {
 /*Third container with courses*/
 
 .container__3 {
-  background-image: url('C:/Projects/Colmar_Academy/resources/images/astronomy-background-constellation-355887.jpg'); /*https://www.pexels.com/search/website%20background/*/
+  background-image: url('https://raw.githubusercontent.com/Alex450514/Colmar_Academy/master/resources/images/astronomy-background-constellation-355887.jpg'); /*https://www.pexels.com/search/website%20background/*/
   background-size: cover;
   display: flex;
   justify-content: space-between;
